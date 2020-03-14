@@ -7,11 +7,11 @@ import Router from 'vue-router';
 // import UsersProfile from './views/UsersProfile.vue';
 // import HeadNamedview from './views/HeadNamedview.vue';
 
-const Home = ()=> import("./views/Home.vue");
-const Users = ()=> import("./views/Users.vue");
-const UsersPosts = ()=> import("./views/UsersPosts.vue");
-const UsersProfile = ()=> import("./views/UsersProfile.vue");
-const HeadNamedview = ()=> import("./views/HeadNamedview.vue");
+const Home = ()=> import(/*webpackChunkName:"home"*/"./views/Home.vue");
+const Users = ()=> import(/*webpackChunkName:"users"*/ "./views/Users.vue");
+const UsersPosts = ()=> import(/*webpackChunkName:"usersposts"*/ "./views/UsersPosts.vue");
+const UsersProfile = ()=> import(/*webpackChunkName:"usersprofile"*/ "./views/UsersProfile.vue");
+const HeadNamedview = ()=> import(/*webpackChunkName:"named"*/ "./views/HeadNamedview.vue");
 
 Vue.use(Router);
 
