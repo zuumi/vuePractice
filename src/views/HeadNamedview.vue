@@ -6,11 +6,14 @@
 </template>
 
 <script>
-import {mapMutations} from "vuex";
+// import {mapMutations} from "vuex";
+import {mapActions} from "vuex";
 
 export default {
   methods:{
-    ...mapMutations(["increment","decrement"])
+    ...mapActions(["increment","decrement"])
+    // ...mapMutations(["increment","decrement"])
+
     // increment(){
     //   this.$store.commit("increment",1);
     // },
