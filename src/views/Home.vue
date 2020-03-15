@@ -9,8 +9,9 @@
 export default {
   computed:{
     count(){
-      return this.$store.state
+      return this.$store.state.count;
     }
   }
-}
+};
+
 </script>
